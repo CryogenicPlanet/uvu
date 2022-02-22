@@ -1,4 +1,4 @@
-const test = require('tape');
+const test = require('ava');
 const math = require('../../math');
 
 test('sum', t => {
@@ -6,7 +6,6 @@ test('sum', t => {
 	t.is(math.sum(1, 2), 3);
 	t.is(math.sum(-1, -2), -3);
 	t.is(math.sum(-1, 1), 0);
-	t.end();
 });
 
 test('div', t => {
@@ -14,7 +13,6 @@ test('div', t => {
 	t.is(math.div(1, 2), 0.5);
 	t.is(math.div(-1, -2), 0.5);
 	t.is(math.div(-1, 1), -1);
-	t.end();
 });
 
 test('mod', t => {
@@ -22,5 +20,4 @@ test('mod', t => {
 	t.is(math.mod(1, 2), 1);
 	t.is(math.mod(-3, -2), -1);
 	t.is(math.mod(7, 4), 3);
-	t.end();
 });
